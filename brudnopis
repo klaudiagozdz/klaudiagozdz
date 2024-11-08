@@ -1,0 +1,11 @@
+# Zadanie 1: Napisz funkcję, która znajdzie sumę wszystkich liczb parzystych w liście 
+# za pomocą pętli for i operatora warunkowego if.
+
+def oblicz_sume_liczb_parzystych(lista):
+    suma = 0
+    for element in lista:
+        if element % 2 == 0:
+            suma += element
+    return suma 
+wynik = oblicz_sume_liczb_parzystych(2,4,3,5)
+print("Suma liczb parzystych w liście:", wynik)

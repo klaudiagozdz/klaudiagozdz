@@ -180,7 +180,7 @@ def konwertuj_imie_nazwisko(imie_nazwisko):
     imie_nazwisko_lista = imie_nazwisko.split()
     if len(imie_nazwisko_lista) < 2:
         return "Błędne dane"
-    inicjal = imie_nazwisko_lista[0][0].upper = "."  #imie_nazwisko_lista[0] to pierwsze słowo w tej liście (czyli imię).
+    inicjal = imie_nazwisko_lista[0][0].upper + "."  #imie_nazwisko_lista[0] to pierwsze słowo w tej liście (czyli imię).
                                                     #imie_nazwisko_lista[0][0]: Pobiera pierwszy znak pierwszego słowa (czyli pierwszą literę imienia).
     nazwisko = imie_nazwisko_lista[-1].upper()  #imie_nazwisko_lista[-1]: Zwraca ostatni element listy imie_nazwisko_lista, którym jest nazwisko (w przypadku, 
                                                 #gdy lista zawiera tylko imię i nazwisko, to będzie to nazwisko).
@@ -271,3 +271,195 @@ def oblicz_slowa_zdanie(zdanie):
         else:
             licznik[element] = 1 #Jeśli usuniesz else, funkcja nie będzie wiedziała, co zrobić, gdy napotka nowe słowo
     return licznik
+
+
+
+    # 1
+# zadeklaruj funkcje oblicz_pole_prostokata, która przyjmuje długości dwóch boków jako dane wejściowe 
+# funkcja ma zwracać wielkość pola prostokąta
+def oblicz_pole_prostokata(bok1, bok2):
+    pole = bok1 * bok2
+    return pole
+
+
+
+# 2
+# zadeklaruj funkcje oblicz_obwod_prostokata, która przyjmuje długości dwóch boków jako dane wejściowe
+# funkcja ma zwracać wielkość obwodu prostokąta 
+def oblicz_obwod_prostokata(bok1, bok2):
+    obwod = 2*bok1 + 2*bok2
+    return obwod
+
+
+# 3 
+# zadeklaruj funkcje oblicz_pole_trojkata, która przyjmuje podstawę i wysokość jako dane wejściowe 
+# funkcja ma zwracać wielkość pola trójkąta;
+def oblicz_pole_trojkata(podstawa, wysokosc):
+    pole = 1/2*podstawa * wysokosc
+    return pole
+
+
+# 4
+# zadeklaruj funkcję oblicz_obwod_kola, która przyjmuje promień jako daną wejściową
+# funkcja ma zwracać wielkość obwodu koła
+# podpowiedź: użyj wartości pi z paczki math
+import math
+def oblicz_obwod_kola(promien):
+    obwod = 2 * math.pi * promien
+    return obwod
+
+
+# 5
+# zadeklaruj funkcję oblicz_pole_kola, która przyjmuje promień jako daną wejściową
+# funkcja ma zwracać wielkość pola koła
+import math 
+def oblicz_pole_kola(promien):
+    pole = math.pi * promien^2
+    return pole
+
+
+
+# 6
+# zadeklaruj funkcję oblicz_pole_trapezu, która przyjmuje długości podstaw i wysokość jako dane wejściowe
+# funkcja ma zwracać wielkość pola trapezu
+def oblicz_pole_trapezu(podstawa1, podstawa2 wysokosc):
+    pole = ((podstawa1 + podstawa2 )* wysokosc) /2
+    return pole
+
+# 7
+# zadeklaruj funkcję oblicz_objetosc_kuli, która przyjmuje promień jako daną wejściową
+# funkcja ma zwracać wielkość objętości kuli
+import math
+def oblicz_objetosc_kuli(promien):
+    objetosc = 4/3 * math.pi * promien**3
+    return objetosc
+
+
+# 8
+# zadeklaruj funkcję oblicz_pole_powierzchni_kuli, która przyjmuje promień jako daną wejściową
+# funkcja ma zwracać wielkość pola powierzchni kuli
+
+
+
+
+# 11
+# zadeklaruj funkcję oblicz_pole_szesciokata, która przyjmuje długość boku jako daną wejściową
+# funkcja ma zwracać wielkość pola sześciokąta foremnego
+import math
+def oblicz_pole_szesciokata(bok):
+    pole = ((3 * math.sqrt(3)) / 2) * bok**2
+    return pole
+
+
+
+
+# 19
+# zadeklaruj funkcję oblicz_cene_z_vatem, która przyjmuje cenę netto i stawkę VAT jako dane wejściowe
+# funkcja ma zwracać cenę brutto (z VAT)
+def oblicz_cene_z_vatem(cena_netto, VAT):
+    cena_z_vat = cena_netto * (1 + VAT / 100)
+    return cena_z_vat
+
+
+
+# 2
+# zadeklaruj funkcję oblicz_kilometry_na_mile, która przyjmuje wartość liczbową kilometrów
+# funkcja ma zwracać liczbę mil 
+# przyjmij, że 1 km = 0.6214 mili
+# rozwiązanie zaokrąglij do 2 miejsca po przecinku
+def oblicz_kilometry_na_mile(km):
+    wartosc = km * 0.6214
+    return round(wartosc, 2)
+
+
+# 3
+# zadeklaruj funkcję oblicz_funty_na_kilogramy, która przyjmuje wartość liczbową funtów
+# funkcja ma zwracać liczbę kilogramów 
+# przyjmij, że 1 funt = 0.4536 kg
+# rozwiązanie zaokrąglij do 2 miejsca po przecinku
+def oblicz_funty_na_kilogramy(funty):
+    wynik = funty * 0.4536
+    return round(wynik, 2)
+
+
+
+# 4
+# zadeklaruj funkcję oblicz_celsjusze_na_fahrenheity, która przyjmuje wartość liczbową stopni Celsjusza
+# funkcja ma zwracać liczbę stopni Fahrenheita 
+# wzór: F = C * 9/5 + 32
+# rozwiązanie zaokrąglij do 2 miejsca po przecinku
+def oblicz_celsjusze_na_fahrenheity(celsjusz):
+    wynik = (celsjusz * 9/5) + 32
+    return round(wynik, 2)
+
+
+# 6
+# zadeklaruj funkcję oblicz_minuty_na_godziny, która przyjmuje wartość liczbową minut
+# funkcja ma zwracać liczbę godzin 
+# rozwiązanie zaokrąglij do 2 miejsca po przecinku
+def oblicz_minuty_na_godziny(minuta):
+    wynik = minuta /60
+    return round(wynik, 2)
+
+
+
+# 7
+# Zadeklaruj funkcję wymien_slowa_po_przecinku, ktora przyjmuje łańcuch znaków 
+# funkcja ma zwrócić łańcuch znaków, którego słowa orginalnego łańcucha zostały
+# podzielone przecinkiem, jak w przykładzie poniżej:
+# Przykład: "tosty ser szynka" --> "tosty, ser, szynka"
+def wymien_slowa_po_przecinku(tekst):
+    slowa = tekst.split()
+    return ",".join(slowa)
+
+
+
+
+# 8
+# Zadeklaruj funkcję polacz_slowa_z_kreskami, ktora przyjmuje łańcuch znaków 
+# funkcja ma zwrócić łańcuch znaków, którego słowa orginalnego łańcucha zostały
+# połączone kreskami, jak w przykładzie poniżej:
+# Przykład: "pies kot mysz" --> "pies-kot-mysz"
+def polacz_slowa_z_kreskami(tekst):
+    slowa = tekst.splt()
+    return "-".join(slowa)
+
+
+
+# 9
+# Zadeklaruj funkcję odwroc_slowa, ktora przyjmuje łańcuch znaków 
+# funkcja ma zwrócić łańcuch znaków, którego słowa orginalnego łańcucha zostały
+# odwrócone, jak w przykładzie poniżej:
+# Przykład: "dom drzewo rzeka" --> "mod owerzd ekar"
+def odwroc_slowa(ciag):
+    slowa = ciag.split()
+    slowa_odwrocone = [slowo[::-1] for slowo in slowa]
+    return slowa_odwrocone
+
+
+
+
+
+# 10
+# Zadeklaruj funkcję zamien_na_duze_litery, ktora przyjmuje łańcuch znaków 
+# funkcja ma zwrócić łańcuch znaków, którego wszystkie litery zostały zamienione
+# na duże, jak w przykładzie poniżej:
+# Przykład: "dzień dobry" --> "DZIEŃ DOBRY"
+def zamien_na_duze_litery(tekst):
+    wynik = " "
+    for litera in tekst:
+        if litera.islower():
+            wynik += litera.upper()
+         
+        return wynik
+
+    
+
+
+
+# 11
+# Zadeklaruj funkcję zamien_na_male_litery, ktora przyjmuje łańcuch znaków 
+# funkcja ma zwrócić łańcuch znaków, którego wszystkie litery zostały zamienione
+# na małe, jak w przykładzie poniżej:
+# Przykład: "WITAJ ŚWIECIE" --> "witaj świecie"
+
